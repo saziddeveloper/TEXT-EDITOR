@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SIMPLE TEXT EDITOR USING JAVASCRIPT"/>
+    <meta name="keywords"content="JAVASCRIPT, TEXT EDITOR, Ashaduzzaman,Sazid,Ashaduzzaman (Sazid)"/>
+    <meta name="author" content="Ashaduzzaman Sazid"/>
+    <title>Text Editor</title>
+    <link rel="shortcut icon" href="img/favicon-text-editor.png" type="image/x-icon">
+    <link rel="stylesheet" href="style/style.css">
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+<body>
+    <main>
+        <section>
+            <h1>My Text Editor</h1>
+        </section>
+        <section>
+            <article id="styleSection">
+                <aside id="tectDecorationField">
+                    <a id="toggleBoldBtn" href="#"><i class="bi bi-type-bold"></i></a>
+                    <a id="toggleItalicBtn" href="#"><i class="bi bi-type-italic"></i></a>
+                    <a id="toggleUnderlineBtn" href="#"><i class="bi bi-type-underline"></i></a>
+                    <a id="toggleThroughBtn" href="#"><i class="bi bi-type-strikethrough"></i></a>
+                </aside>
+                <aside id="alignStyleField">
+                    <a id="toggleAlignLeftBtn" href="#"><i class="bi bi-text-left"></i></a>
+                    <a id="toggleAlignCenterBtn" href="#"><i class="bi bi-text-center"></i></a>
+                    <a id="toggleAlignRightBtn" href="#"><i class="bi bi-text-right"></i></a>
+                    <a id="toggleAlignJustifyBtn" href="#"><i class="bi bi-justify"></i></a>
+                </aside>
+                <aside id="inputStyleField">
+                    <input type="number" id="inputFontSize" value="18">
+                    <a href="#" id="toggleCaseBtn">aA</a>
+                    <section class="dropdown">
+                        <button onclick="toggleDropdown()" class="dropbtn">F</button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="#" data-font="sans-serif">Sans-Serif</a>
+                            <a href="#" data-font="cursive">Cursive</a>
+                            <a href="#" data-font="fantasy">Fantasy</a>
+                            <a href="#" data-font="monospace">Monospace</a>
+                        </div>
+                    </section>
+                    <input type="color" id="inputFontColor">
+                </aside>
+            </article>
+            <div></div>
+            <article id="inputFieldSection">
+                <textarea id="textInput" style="font-size: 18px; font-family: sans-serif; color: black;"></textarea>
+            </article>
+        </section>
+    </main>
+    <p id="rights">ALL RIGHT RESERVED : <a href="http://saziddeveloper.github.io">SAZIDDEVELOPER</a></p>
+    <script src="js/text-decoration.js"></script>
+    <script src="js/text-align.js"></script>
+    <script src="js/font-style.js"></script>
+</body>
+</html>
